@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DMO – Data Management Offerings</title>
+  <meta name="description" content="Data Management Office (DMO) offerings, NDMO domains, benefits, and implementation roadmap." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .card { border-radius: 1rem; box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+    .section-title { letter-spacing: -0.02em; }
+    .reveal { opacity:0; transform: translateY(16px); transition: all .7s ease; }
+    .reveal.show { opacity:1; transform: translateY(0); }
+    .badge { font-size:.65rem; padding:.15rem .5rem; border:1px solid rgba(0,0,0,.12); border-radius:.5rem; }
+  </style>
+</head>
+<body class="bg-zinc-50 text-zinc-900">
+  <!-- Header -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur border-b border-zinc-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+  <div class="w-10 h-10 rounded-full bg-zinc-900 grid place-items-center text-white font-bold text-sm">CALX</div>
+        <span class="font-semibold tracking-tight">DMO</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#domains" class="hover:text-zinc-900 text-zinc-600">NDMO Domains</a>
+        <a href="#offerings" class="hover:text-zinc-900 text-zinc-600">DMO Offerings</a>
+        <a href="#benefits" class="hover:text-zinc-900 text-zinc-600">Benefits</a>
+        <a href="#contact" class="hover:text-zinc-900 text-zinc-600">Contact</a>
+      </nav>
+      <button id="themeToggle" class="inline-flex items-center gap-2 text-sm px-3 py-2 rounded-xl border border-zinc-300 hover:bg-zinc-100">Dark</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative pt-28 pb-20">
+  <div class="absolute inset-0 -z-10" aria-hidden="true">
+  <div class="w-full h-full bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1542223616-2b6f9a2b2808?q=80&w=1920&auto=format&fit=crop');"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-white/70 via-white/60 to-white"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl reveal">
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight section-title">Data Management Office (DMO)</h1>
+        <p class="mt-5 text-lg text-zinc-700">Comprehensive offerings aligned with NDMO and PDPL—governance, cataloging, quality, and analytics enablement—to unlock trusted, secure, value‑ready data.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#offerings" class="px-5 py-3 rounded-xl bg-zinc-900 text-white hover:opacity-90">Explore Offerings</a>
+          <a href="#domains" class="px-5 py-3 rounded-xl border border-zinc-300 hover:bg-zinc-100">View NDMO Domains</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NDMO Domains (from PPT) -->
+  <section id="domains" class="py-16 bg-white border-t border-zinc-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal">
+        <h2 class="text-3xl font-bold section-title">NDMO Domains</h2>
+        <p class="mt-2 text-zinc-600">Core domains spanning governance, quality, security, access, and value realization.</p>
+      </div>
+
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        <!-- 01–15 -->
+  <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=800&auto=format&fit=crop" alt="Data Assetization"/><div class="flex items-center gap-2"><span class="badge">01</span><h3 class="font-semibold">Data Assetization</h3></div></div>
+  <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?q=80&w=800&auto=format&fit=crop" alt="Data Governance"/><div class="flex items-center gap-2"><span class="badge">02</span><h3 class="font-semibold">Data Governance</h3></div></div>
+  <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800&auto=format&fit=crop" alt="Data Classification & Availability"/><div class="flex items-center gap-2"><span class="badge">03</span><h3 class="font-semibold">Data Classification & Availability</h3></div></div>
+  <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1484014989203-7a1d2a0a0f06?q=80&w=800&auto=format&fit=crop" alt="Data Protection"/><div class="flex items-center gap-2"><span class="badge">04</span><h3 class="font-semibold">Data Protection</h3></div></div>
+  <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?q=80&w=800&auto=format&fit=crop" alt="Data Architecture & Modeling"/><div class="flex items-center gap-2"><span class="badge">05</span><h3 class="font-semibold">Data Architecture & Modeling</h3></div></div>
+  <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1517148815978-75f6acaaff06?q=80&w=800&auto=format&fit=crop" alt="Reference & Master Data Mgmt."/><div class="flex items-center gap-2"><span class="badge">06</span><h3 class="font-semibold">Reference & Master Data Mgmt.</h3></div></div>
+  <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=800&auto=format&fit=crop" alt="Data Operations"/><div class="flex items-center gap-2"><span class="badge">07</span><h3 class="font-semibold">Data Operations</h3></div></div>
+  <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop" alt="Document & Content Mgmt."/><div class="flex items-center gap-2"><span class="badge">08</span><h3 class="font-semibold">Document & Content Mgmt.</h3></div></div>
+  <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=800&auto=format&fit=crop" alt="Data Catalog & Metadata"/><div class="flex items-center gap-2"><span class="badge">09</span><h3 class="font-semibold">Data Catalog & Metadata</h3></div></div>
+  <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1508385082359-fb1b5d6f5f5b?q=80&w=800&auto=format&fit=crop" alt="Data Quality"/><div class="flex items-center gap-2"><span class="badge">10</span><h3 class="font-semibold">Data Quality</h3></div></div>
+  <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop" alt="Business Intelligence & Analytics"/><div class="flex items-center gap-2"><span class="badge">11</span><h3 class="font-semibold">Business Intelligence & Analytics</h3></div></div>
+  <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop" alt="Data Value Realization"/><div class="flex items-center gap-2"><span class="badge">12</span><h3 class="font-semibold">Data Value Realization</h3></div></div>
+  <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=800&auto=format&fit=crop" alt="Freedom of Information"/><div class="flex items-center gap-2"><span class="badge">13</span><h3 class="font-semibold">Freedom of Information</h3></div></div>
+  <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=800&auto=format&fit=crop" alt="Data Sharing & Interoperability"/><div class="flex items-center gap-2"><span class="badge">14</span><h3 class="font-semibold">Data Sharing & Interoperability</h3></div></div>
+  <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1508385082359-fb1b5d6f5f5b?q=80&w=800&auto=format&fit=crop" alt="Open Data"/><div class="flex items-center gap-2"><span class="badge">15</span><h3 class="font-semibold">Open Data</h3></div></div>
+        <!-- Additional callouts from PPT -->
+        <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=800&auto=format&fit=crop" alt="Personal Data Protection (PDPL)"/><div class="flex items-center gap-2"><span class="badge">PDPL</span><h3 class="font-semibold">Personal Data Protection</h3></div></div>
+        <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1532510948250-75c1ae114743?q=80&w=800&auto=format&fit=crop" alt="Data Security & Protection (NCA)"/><div class="flex items-center gap-2"><span class="badge">NCA</span><h3 class="font-semibold">Data Security & Protection</h3></div><p class="text-xs text-zinc-500 mt-1">(covered by NCA)</p></div>
+        <div class="card p-5 bg-white reveal"><img class="w-full h-32 object-cover mb-2 rounded" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=800&auto=format&fit=crop" alt="Data Usage"/><div class="flex items-center gap-2"><span class="badge">—</span><h3 class="font-semibold">Data Usage</h3></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerings (Establish / Assess / Operate) from PPT -->
+  <section id="offerings" class="py-16 bg-gradient-to-b from-zinc-50 to-zinc-100 border-t border-zinc-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal">
+        <h2 class="text-3xl font-bold section-title">DMO Offerings</h2>
+        <p class="mt-2 text-zinc-600">Phased approach to establish, assess, and operate a resilient data management capability.</p>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="card p-6 bg-white reveal">
+          <div class="text-xs text-zinc-500">1. Establish – Targeted Domains</div>
+          <h3 class="font-semibold text-lg mt-1">Data Governance & Strategy Setup</h3>
+          <ul class="mt-4 list-disc pl-5 space-y-2 text-zinc-700">
+            <li>Policies and Procedures Development (1.1)</li>
+            <li>Data Analytics Target Operating Model (1.2)</li>
+            <li>Roadmap for NDMO Compliance and Tooling Implementation (1.4)</li>
+          </ul>
+        </div>
+        <div class="card p-6 bg-white reveal">
+          <div class="text-xs text-zinc-500">2. Assess – Targeted Domains</div>
+          <h3 class="font-semibold text-lg mt-1">Data Inventory and Classification</h3>
+          <ul class="mt-4 list-disc pl-5 space-y-2 text-zinc-700">
+            <li>Review Policies and Procedures (2.1)</li>
+            <li>Data Sharing and Integration Practises (2.2)</li>
+            <li>Roadmap for NDMO Compliance and Tooling Implementation (2.4)</li>
+          </ul>
+        </div>
+        <div class="card p-6 bg-white reveal">
+          <div class="text-xs text-zinc-500">3. Operate – Targeted Domains</div>
+          <h3 class="font-semibold text-lg mt-1">Operate & Scale</h3>
+          <ul class="mt-4 list-disc pl-5 space-y-2 text-zinc-700">
+            <li>Data Catalog Implementation (3.1)</li>
+            <li>Data Lifecycle and Quality Management (3.2)</li>
+            <li>Analytics Use Case Development (3.3)</li>
+            <li>Data Operational Excellence (3.4)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Illustrative banner images (royalty‑free Unsplash) -->
+        <div class="mt-12 grid md:grid-cols-3 gap-4">
+  <div class="h-56 rounded-2xl overflow-hidden reveal"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1465101178521-c1a2b3a8a5c6?q=80&w=1600&auto=format&fit=crop" alt="Data governance"/></div>
+  <div class="h-56 rounded-2xl overflow-hidden reveal"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1465101178521-c1a2b3a8a5c6?q=80&w=1600&auto=format&fit=crop" alt="Analytics"/></div>
+  <div class="h-56 rounded-2xl overflow-hidden reveal"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1600&auto=format&fit=crop" alt="Catalog & metadata"/></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits (from PPT) -->
+  <section id="benefits" class="py-16 bg-white border-t border-zinc-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal">
+        <h2 class="text-3xl font-bold section-title">DMO Benefits</h2>
+  <p class="mt-2 text-zinc-600">Outcomes delivered by implementing a robust Data Management framework.</p>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="card p-6 bg-white reveal"><h3 class="font-semibold">Enhanced Regulatory Compliance</h3><p class="mt-2 text-zinc-700">Meet NDMO & PDPL with confidence through robust controls and traceability.</p></div>
+        <div class="card p-6 bg-white reveal"><h3 class="font-semibold">Proactive Strategic Alignment</h3><p class="mt-2 text-zinc-700">Embed data into strategy, prioritizing domains that drive value.</p></div>
+        <div class="card p-6 bg-white reveal"><h3 class="font-semibold">Improved Data Accessibility</h3><p class="mt-2 text-zinc-700">Cataloged, well‑governed data accelerates discovery and reuse.</p></div>
+        <div class="card p-6 bg-white reveal"><h3 class="font-semibold">Accelerated Analytics Deployment</h3><p class="mt-2 text-zinc-700">Reliable data unlocks predictive models, GenAI, and self‑service BI.</p></div>
+        <div class="card p-6 bg-white reveal"><h3 class="font-semibold">Sustained Operational Excellence</h3><p class="mt-2 text-zinc-700">Lifecycle & quality disciplines reduce rework and incidents.</p></div>
+        <div class="card p-6 bg-white reveal"><h3 class="font-semibold">Elevated Data Quality Management</h3><p class="mt-2 text-zinc-700">Standards and issue remediation keep data trustworthy at scale.</p></div>
+      </div>
+
+      <div class="mt-10 card p-6 bg-white reveal">
+        <p class="text-zinc-700 leading-relaxed">
+          Implementing these comprehensive Data Management Office (DMO) offerings enables organizations to address NDMO and PDPL obligations while strategically harnessing their data. By establishing robust governance structures, clear policies, and rigorous compliance across all data domains, organizations mitigate risks and ensure information is secure, accurate, and properly classified. This foundational framework not only streamlines operations but also drives advanced analytics capabilities. With a unified data repository, reliable Data Catalog, and focused quality checks, organizations can confidently adopt initiatives like Generative AI, predictive modelling, and self‑service BI—accelerating digital transformation while remaining agile, innovative, and fully prepared for shifting regulatory landscapes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA with functional button -->
+  <section id="contact" class="py-16 bg-gradient-to-b from-zinc-100 to-zinc-50 border-t border-zinc-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="card px-6 py-10 bg-white reveal">
+        <div class="md:flex items-center justify-between gap-6">
+          <div>
+            <h3 class="text-2xl font-bold">Ready to operationalize data excellence?</h3>
+            <p class="mt-2 text-zinc-700">Let’s align the roadmap, tools, and governance to your priorities.</p>
+          </div>
+          <form id="demoForm" class="mt-6 md:mt-0 w-full md:w-auto grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <input id="name" type="text" placeholder="Your name" required class="px-4 py-3 rounded-xl border border-zinc-300 focus:outline-none focus:ring-2 focus:ring-zinc-900">
+            <input id="email" type="email" placeholder="Work email" required class="px-4 py-3 rounded-xl border border-zinc-300 focus:outline-none focus:ring-2 focus:ring-zinc-900">
+            <button type="submit" class="px-5 py-3 rounded-xl bg-zinc-900 text-white hover:opacity-90">Request a Demo</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-zinc-500">© <span id="y"></span> DMO — Data Management Office Offerings</footer>
+
+  <script>
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); } });
+    }, {threshold: 0.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    // Dark mode toggle
+    const btn = document.getElementById('themeToggle');
+    function setDark(on){
+      if(on){ document.documentElement.classList.add('dark'); document.body.classList.add('bg-zinc-950','text-zinc-100'); btn.textContent='Light'; }
+      else { document.documentElement.classList.remove('dark'); document.body.classList.remove('bg-zinc-950','text-zinc-100'); btn.textContent='Dark'; }
+    }
+    let dark=false; btn.addEventListener('click',()=>{ dark=!dark; setDark(dark); });
+
+    // Contact form
+    document.getElementById('demoForm').addEventListener('submit',function(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value;
+      const email=document.getElementById('email').value;
+      alert(`Thank you ${name}! We will reach out to ${email} shortly.`);
+      this.reset();
+    });
+
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
